@@ -172,6 +172,15 @@
       <button class="btn btn-primary"><i data-feather="circle"></i></button>
       <i data-feather="circle"></i>
     </div>
+    <div class="sidebar-menu">
+      <ul class="menu">
+        <template v-for="item in $store.state.sideBarItems">
+          <li :key="item.key">
+            {{ item.name }}
+          </li>
+        </template>
+      </ul>
+    </div>
   </div>
 </template>
 

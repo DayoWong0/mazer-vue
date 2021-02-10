@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import store from './store'
 
 // plugins
 import './plugins/perfect-scrollbar'
@@ -13,5 +14,6 @@ import './plugins/feather-icons'
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
+    store,
+    render: h => h(App),
 }).$mount('#app')
